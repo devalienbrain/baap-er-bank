@@ -4,12 +4,12 @@ let remainingAmount = parseFloat(document.getElementById('remaining-amount').inn
 document.getElementById('deposit-btn').addEventListener('click', function () {
   const amountDeposited = parseFloat(document.getElementById('amount-to-deposit').value);
 
-  if (isNaN(amountDeposited)) {
+  document.getElementById('amount-to-deposit').value = '';
+
+  if (isNaN(amountDeposited) || amountDeposited < 0) {
     alert('Invalid amount! Please input a valid amount.')
     return;
   }
-
-  document.getElementById('amount-to-deposit').value = '';
 
   let depositTotal = parseFloat(document.getElementById('deposited-amount').innerText);
 
@@ -23,12 +23,12 @@ document.getElementById('deposit-btn').addEventListener('click', function () {
 document.getElementById('withdraw-btn').addEventListener('click', function () {
   const amountWithdrawed = parseFloat(document.getElementById('amount-to-withdraw').value);
 
-  if (isNaN(amountWithdrawed)) {
+  document.getElementById('amount-to-withdraw').value = '';
+
+  if (isNaN(amountWithdrawed) || amountWithdrawed < 0) {
     alert('Invalid amount! Please input a valid amount.')
     return;
   }
-
-  document.getElementById('amount-to-withdraw').value = '';
 
   if (amountWithdrawed <= remainingAmount) {
     let withdrawTotal = parseFloat(document.getElementById('withdrawed-amount').innerText);
