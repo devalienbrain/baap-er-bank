@@ -5,10 +5,87 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inside Baap-er-Bank</title>
+  <!-- DaisyUI cdn link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
 </head>
 
-<body>
+<body class="container mx-auto">
+  <section>
+    <div class="text-center p-5">
+      <h1 class="text-3xl font-black">CONFIDENTIAL <br> <span class="text-fuchsia-800 text-5xl"> BAAP-ER-BANK </span>
+      </h1>
+    </div>
+  </section>
 
+  <!-- Banking system -->
+  <section class="mt-11 mb-7">
+    <div class="flex flex-col md:flex-row justify-around">
+      <!-- Total deposit -->
+      <div class="card basis-1 bg-primary text-primary-content">
+        <div class="card-body">
+          <h2 class="card-title">Total Deposited Amount</h2>
+          <p>$ 0</p>
+          <div class="card-actions justify-end">
+          </div>
+        </div>
+      </div>
+      <!-- Total Balance -->
+      <div class="card basis-2 bg-base-100 shadow-xl image-full">
+        <figure><img class="w-full" src="/images.jpeg" alt="taka" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">TOTAL BALANCE</h2>
+          <p>$ 0</p>
+          <div class="card-actions justify-end">
+          </div>
+        </div>
+      </div>
+
+      <!-- Total withdraw -->
+      <div class="card basis-1 bg-primary text-primary-content">
+        <div class="card-body">
+          <h2 class="card-title">Total Withdrawal Amount</h2>
+          <p>$ 0</p>
+          <div class="card-actions justify-end">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Deposit Or Withdraw -->
+    <div class="mt-7 flex flex-col md:flex-row justify-around">
+      <!-- Total deposit -->
+      <div class="card w-96 bg-primary text-primary-content">
+        <div class="card-body">
+          <h2 class="card-title">Enter Amount to be Deposited</h2>
+          <div>
+            <input type="number" name="" id="" placeholder="Enter amount">
+          </div>
+
+          <div class="card-actions justify-end">
+          </div>
+          <button class="btn max-w-max">Deposit</button>
+        </div>
+      </div>
+
+      <!-- Total withdraw -->
+      <div class="card w-96 bg-primary text-primary-content">
+        <div class="card-body">
+          <h2 class="card-title">Enter Amount to be Withdrawed</h2>
+          <div>
+            <input type="number" name="" id="" placeholder="Enter amount">
+          </div>
+
+          <div class="card-actions justify-end">
+          </div>
+          <button class="btn max-w-max">Withdraw</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
 </body>
 
 </html>
